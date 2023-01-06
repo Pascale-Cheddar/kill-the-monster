@@ -47,7 +47,7 @@ const app = Vue.createApp({
     specialAttackAvailable() {
       return this.currentRound % 3 !== 0;
     },
-    healingIsAvailable() {
+    healingIsNotAvailable() {
       return this.playerHealth === 100;
     },
   },

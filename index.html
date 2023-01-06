@@ -39,7 +39,7 @@
       <section id="controls" v-else>
         <button @click="attackMonster">ATTACK</button>
         <button :disabled="specialAttackAvailable" @click="specialAttack">SPECIAL ATTACK</button>
-        <button :disabled="healingIsAvailable" @click="healingPortion">HEAL</button>
+        <button :disabled="healingIsNotAvailable" @click="healingPortion">HEAL</button>
         <button @click="surrender">SURRENDER</button>
       </section>
       <section id="log" class="container">
